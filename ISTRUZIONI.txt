@@ -1,0 +1,51 @@
+⚽ VIDEO CLIP CUTTER — Istruzioni
+================================
+
+INSTALLAZIONE (solo la prima volta)
+------------------------------------
+1. Apri il Terminale (⌘+Spazio → scrivi "Terminale")
+2. Installa Homebrew se non ce l'hai:
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+3. Installa Python e ffmpeg:
+   brew install python ffmpeg
+
+4. Rendi l'avviatore eseguibile:
+   chmod +x "/percorso/alla/cartella/Avvia App.command"
+   (oppure incolla la cartella nel Terminale dopo "chmod +x " e trascina il file .command)
+
+
+COME USARE L'APP
+-----------------
+1. Doppio click su "Avvia App.command" per aprire il programma
+
+2. TIMER: premi "▶ Avvia" nello stesso momento in cui premi play sul video
+
+3. Durante il video, quando inizia un'azione interessante:
+   → premi "🔴 Segna INIZIO"
+
+4. Quando finisce l'azione:
+   → premi "🟢 Segna FINE"
+   → la clip viene aggiunta alla lista con il minutaggio preciso
+
+5. Doppio click su una clip per rinominarla (es. "Gol", "Rigore", "Parata")
+
+6. Ripeti per tutte le 40 azioni che vuoi salvare
+
+7. Clicca "Scegli" accanto a "Video:" per selezionare il file della partita
+
+8. Clicca "✂️ TAGLIA VIDEO"
+   → i file vengono salvati nella cartella "clips/" accanto al video originale
+
+SUGGERIMENTI
+-------------
+- Puoi fare Pausa sul timer se c'è un intervallo o interruzione
+- Usa "💾 Salva lista" per salvare i tagli e continuarli un'altra volta
+- Usa "📂 Carica lista" per riprendere una sessione salvata
+- I file clip vengono nominati automaticamente: 01_Azione_1.mp4, 02_Gol.mp4, ecc.
+
+PROBLEMI COMUNI
+----------------
+"ffmpeg non trovato"  → esegui: brew install ffmpeg
+"Python non trovato"  → esegui: brew install python
+L'app non si apre    → nel Terminale scrivi: python3 VideoClipCutter.py
